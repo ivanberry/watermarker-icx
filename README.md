@@ -2,7 +2,7 @@
 
 ## 参见
 
-[前端水印生成方案](https://imweb.io/topic/5985e4ed35d7d0a321c5eb82)
+[前端水印生成方案](https://musicfe.cn/page/15)
 
 -   simple tool to create water maker
 -   @param container
