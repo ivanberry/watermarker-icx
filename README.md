@@ -14,5 +14,5 @@
 ## 安装
 
 ```bash
-npm install waterMarker
+npm install --save watermarker-icx
 ```
