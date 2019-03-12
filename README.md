@@ -30,7 +30,7 @@ npm install --save watermarker-icx
 
 ```javascript
 ...
-import createMarker from watermarker-icx
+import createMarker from watermarker-icx;
 ...
 
 componentDidMount() {
