@@ -93,16 +93,4 @@ function createMaker({
   }
 }
 
-/* eslint-disable no-undef */
-if (typeof module !== 'undefined' && module.exports) {
-  // CMD
-  module.exports = createMaker;
-} else if (typeof define === 'function' && define.amd) {
-  // AMD
-  define(() => createMaker);
-} else {
-  window.createMaker = createMaker;
-}
-
-// module.exports = createMarker;
 export default createMaker;
