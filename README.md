@@ -2,7 +2,7 @@
 
 ## 参见
 
-https://imweb.io/topic/5985e4ed35d7d0a321c5eb82
+[前端水印生成方案](https://imweb.io/topic/5985e4ed35d7d0a321c5eb82)
 
 -   simple tool to create water maker
 -   @param container
@@ -20,4 +20,20 @@ https://imweb.io/topic/5985e4ed35d7d0a321c5eb82
 
 ```bash
 npm install --save watermarker-icx
+```
+
+## 使用
+
+默认情况下，仅依赖`document.body`，可以灵活在入口处调用。
+
+```react
+...
+import createMarker from watermarker-icx
+...
+
+componentDidMount() {
+	...
+	createMarker();
+	...
+}
 ```

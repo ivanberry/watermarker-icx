@@ -10,7 +10,9 @@
  * @param content: 文本内容
  * @param rotate: 旋转角度
  * @param zIndex: 层级
- * @creator https://imweb.io/topic/5985e4ed35d7d0a321c5eb82
+ * @reference https://imweb.io/topic/5985e4ed35d7d0a321c5eb82
+ * @origin author: microzhao
+ * @author: ivanberry
  */
 function createMaker({
   // 使用 ES6 的函数默认值方式设置参数的默认取值
