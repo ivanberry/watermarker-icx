@@ -1,6 +1,6 @@
 {
   "name": "watermarker-icx",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "create waterMaker",
   "main": "./src/index.js",
   "scripts": {
