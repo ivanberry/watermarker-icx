@@ -10,4 +10,8 @@ const presets = [
   ],
 ];
 
+if (process.env["ENV"] === "prod") {
+	presets.push(["minify"]);
+}
+
 module.exports = { presets };

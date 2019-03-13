@@ -14,7 +14,7 @@
  * @origin author: microzhao
  * @author: ivanberry
  */
-function createMaker({
+(function createMaker({
   // 使用 ES6 的函数默认值方式设置参数的默认取值
   // 具体参见 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Default_parameters
   container = document.body,
@@ -92,6 +92,14 @@ function createMaker({
       childList: true,
     });
   }
-}
 
-export default createMaker;
+  if (typeof module != 'undefined' && module.exports) {  //CMD
+        module.exports = createMaker;
+      } else if (typeof define == 'function' && define.amd) { // AMD
+        define(function () {
+          return createMaker;
+        });
+     } else {
+        window.createMaker = createMaker;
+    }
+})();

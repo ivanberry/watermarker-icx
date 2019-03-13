@@ -26,16 +26,36 @@ npm install --save watermarker-icx
 
 默认情况下，仅依赖`document.body`，可以灵活在入口处调用。
 
+1. 独立版本使用
+
+引入独立版本
+
+```html
+<script src='path/to/watermarker-standalone.js'></script>
+```
+
+调用使用
+
+```javascript
+// pure javascript
+document.addEventListener("DOMContentLoaded", function() {
+	createMarker();
+});
+
+// jQuery
+$(document).ready(function() {
+	createMarker();
+});
+```
+
+2. 模块环境使用
+
 以 React 项目为例:
 
 ```javascript
-...
 import createMarker from watermarker-icx;
-...
 
 componentDidMount() {
-	...
 	createMarker();
-	...
 }
 ```

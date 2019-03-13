@@ -5,7 +5,8 @@
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/babel src -d lib"
+    "build": "./node_modules/.bin/babel src -d lib",
+    "build:prod": "ENV=prod ./node_modules/.bin/babel src lib/index.min.js"
   },
   "keywords": [
     "water maker"
@@ -20,6 +21,7 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
+    "babel-preset-minify": "^0.5.0",
     "eslint": "^5.15.1"
   },
   "dependencies": {}
