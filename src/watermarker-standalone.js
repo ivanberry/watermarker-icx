@@ -22,10 +22,10 @@
   height = '200px',
   textAlign = 'center',
   textBaseline = 'middle',
-  font = '20px Microsoft Yahei',
+  font = '18px Microsoft Yahei',
   fillStyle = 'rgba(184, 184, 184, 0.15)',
   content = 'iCarbonX',
-  rotate = '30',
+  rotate = '-20',
   zIndex = 1000,
 } = {}) {
   const _wm = document.querySelector('._wm');
